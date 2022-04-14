@@ -12,6 +12,9 @@ Features Paragraph: #8F8F8F
 
 */
 
+
+
+
 /* ---------------------- HTML Selectors ---------------------- */
 body {
     font-family: 'Montserrat-Thin', sans-serif;
@@ -43,11 +46,13 @@ h3 {
     padding: 3% 15%;
 }
 
+
 /* Title Image */
 
 .title-image {
     transform: rotate(25deg);
     width: 60%;
+    margin-left: 12%;
 }
 
 
@@ -103,16 +108,23 @@ h3 {
     color: #8F8F8F;
 }
 
+
+
+/* .test {
+    background-color: #EF8172;
+} */
+
 /* ---------------------- ID Selectors ---------------------- */
 #title {
     background-color: #FF4C68;
+    max-height: 100vh;
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 
 #features {
-    position: relative;
-    z-index: 2;
+    /* position: relative;
+    z-index: 1; */
     background-color: white;
 }
 
@@ -126,7 +138,7 @@ h3 {
 
 .carousel-item {
     padding: 7% 15%;
-    
+
 }
 
 .testimonial-image {
@@ -146,4 +158,22 @@ h3 {
 #press img {
     width: 10%;
     margin: 20px 20px 50px;
+}
+
+/* Pricing Cards */
+#pricing {
+    padding: 7% 15%;
+}
+
+#pricing h2,
+#pricing p {
+    text-align: center;
+}
+
+.card button {
+    width: 100%;
+}
+
+@media screen {
+    
 }
