@@ -1,31 +1,15 @@
-/* Google Fonts: Montserrat and Ubuntu */
+/*************** 0. eneral Section ***************/
+
+/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&Montserrat:wght@400&family=Ubuntu&display=swap');
 
+html {
+    margin: 0;
+}
 
-/* 
-
-Colors 
-
-Fontawesome Icons: #EF8172
-Features Paragraph: #8F8F8F
-
-
-*/
-
-
-
-
-/* ---------------------- HTML Selectors ---------------------- */
 body {
     font-family: 'Montserrat-Thin', sans-serif;
     font-weight: 400;
-}
-
-h1 {
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    color: white;
 }
 
 h2 {
@@ -34,31 +18,35 @@ h2 {
     line-height: 1.5;
 }
 
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+.red-background {
+    background-color: #FF4C68;
+    color: white;
 }
 
-
-
-/* ---------------------- Class Selectors ---------------------- */
-.container-fluid {
-    padding: 3% 15%;
+.default-padding {
+    padding: 7% 15%;
 }
 
+/*************** 1. Title Section ***************/
+h1 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+}
 
-/* Title Image */
+#title {
+    padding: 3% 15% 7%;
+}
 
 .title-image {
+    width: 20%;
     transform: rotate(25deg);
-    width: 60%;
-    margin-left: 12%;
+    margin-left: 2%;
+    position: absolute;
 }
 
-
-/* Navbar Styling */
 .navbar {
-    padding-bottom: 4.5rem;
+    margin-bottom: 10%;
 }
 
 .navbar-brand {
@@ -68,36 +56,48 @@ h3 {
 }
 
 .nav-item {
+    font-size: 1.2rem;
     padding: 0 18px;
 }
 
-.nav-link {
-    font-size: 1.2rem;
-}
-
-/* Download Buttons */
-.download-button {
+#title button {
     margin: 5% 3% 5% 0;
 }
 
-/* Features */
-#features {
-    padding: 7% 15%;
+@media (max-width: 1100px) {
+    .title-image {
+        transform: rotate(0);
+        margin-left: 0;
+        width: 40%;
+        position: static;
+    }
+
+    #title {
+        text-align: center;
+    }
 }
 
+
+/************* 2. Features Section *************/
+#features {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
 .features-box {
     text-align: center;
     padding: 5%;
 }
 
-/* .icon {
-    color: #EF8172;
-} */
+.features-box h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
 
 .features-box i {
-    font-size: 2rem;
     color: #EF8172;
-    padding-bottom: 12px;
+    font-size: 35px;
+    padding-bottom: 15px;
 }
 
 .features-box i:hover {
@@ -110,47 +110,25 @@ h3 {
 
 
 
-/* .test {
-    background-color: #EF8172;
-} */
-
-/* ---------------------- ID Selectors ---------------------- */
-#title {
-    background-color: #FF4C68;
-    max-height: 100vh;
-    position: relative;
-    z-index: -1;
-}
-
-#features {
-    /* position: relative;
-    z-index: 1; */
-    background-color: white;
-}
-
-/* Testimonials */
-
+/*********** 3. Testimonials Section ***********/
 #testimonials {
     text-align: center;
-    background-color: #FF4C68;
-    color: white;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-
-}
-
-.testimonial-image {
+#testimonials img {
     border-radius: 50%;
     width: 20%;
     margin: 20px;
 }
 
-/* Press Section */
+.carousel-item {
+    padding: 7% 15%;
+}
 
+
+
+/*************** 4. Press Section **************/
 #press {
-    background-color: #FF4C68;
     padding-bottom: 3%;
     text-align: center;
 }
@@ -160,20 +138,29 @@ h3 {
     margin: 20px 20px 50px;
 }
 
-/* Pricing Cards */
-#pricing {
-    padding: 7% 15%;
-}
 
-#pricing h2,
-#pricing p {
+
+/************** 5. Pricing Section *************/
+#pricing h2, #pricing p {
     text-align: center;
 }
 
-.card button {
-    width: 100%;
+
+
+/*************** 6. CTA Section ***************/
+#cta {
+    padding-top: 7%;
+    text-align: center;
 }
 
-@media screen {
-    
+#cta button {
+    margin: 2% 1% 2% 0;
+}
+
+
+/************** 7. Footer Section **************/
+footer {
+    margin-bottom: 0;
+    padding-bottom: 2%;
+    text-align: center;
 }
